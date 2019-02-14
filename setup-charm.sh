@@ -17,6 +17,7 @@ else
   PKG_SSL=libssl-dev
   PKG_GMP=libgmp-dev
   PKG_PYTHON=python3-dev
+  PKG_UNZIP=unzip
 fi
 
 [[ ! -z $PKG_FLEX ]] && sudo $PACKAGE_MANAGER -y install $PKG_FLEX
@@ -24,6 +25,7 @@ fi
 [[ ! -z $PKG_SSL ]] && sudo $PACKAGE_MANAGER -y install $PKG_SSL
 [[ ! -z $PKG_GMP ]] && sudo $PACKAGE_MANAGER -y install $PKG_GMP
 [[ ! -z $PKG_PYTHON ]] && sudo $PACKAGE_MANAGER -y install $PKG_PYTHON
+[[ ! -z $PKG_UNZIP ]] && sudo $PACKAGE_MANAGER -y install $PKG_UNZIP
 
 # PBC
 # Cleanup any old data
